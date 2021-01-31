@@ -20,6 +20,8 @@ AddEventHandler("fxblip:add", function(id, name)
         time = os.time(),
     }
 
+    print("Player " .. GetPlayerName(source) .. " added blip with name '" .. name .. "'")
+
     TriggerClientEvent("fxblip:add", -1, playerId, blips[playerId])
 end)
 
